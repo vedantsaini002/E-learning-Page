@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
-  primary-color: #6eb0ec;
-  text-dark: #111827;
-  text-light: #6b7280;
-  white: #ffffff;
-  max-width: 1200px;
+  --primary-color: #6eb0ec;
+  --text-dark: #111827;
+  --text-light: #6b7280;
+  --white: #ffffff;
+  --max-width: 1200px;
 }
 
 * {
@@ -58,7 +58,7 @@ nav {
   font-size: 1.5rem;
   line-height: 1rem;
   color: var(--white);
-  background-color: var(primary-color);
+  background-color: var(--primary-color);
   border-radius: 100%;
 }
 
@@ -73,14 +73,14 @@ nav {
 .nav__socials a {
   padding: 5px 7px;
   font-size: 1.5rem;
-  color: var(text-dark);
+  color: var(--text-dark);
   background-color: #efeaee;
   border-radius: 100%;
 }
 
 .nav__socials a:hover {
-  color: var(white);
-  background-color: var(text-light);
+  color: var(--white);
+  background-color: var(--text-light);
 }
 
 .nav__contact {
@@ -98,24 +98,24 @@ nav {
 
 .nav__contact__card span {
   font-size: 2rem;
-  color: var(primary-color);
+  color: var(--primary-color);
 }
 
 .nav__contact__card p {
   margin-bottom: 5px;
   font-size: 0.9rem;
   font-weight: 600;
-  color: var(text-light);
+  color: var(--text-light);
 }
 
 .nav__contact__card h4 {
   font-size: 1rem;
   font-weight: 700;
-  color: var(text-dark);
+  color: var(--text-dark);
 }
 
 .header__container {
-  max-width: var(max-width);
+  max-width: var(--max-width);
   margin: auto;
   padding: 2rem 1rem;
   display: grid;
@@ -128,11 +128,11 @@ nav {
   font-size: 4rem;
   font-weight: 700;
   line-height: 5rem;
-  color: var(text-dark);
+  color: var(--text-dark);
 }
 
 .header__container h1 span {
-  color: var(primary-color);
+  color: var(--primary-color);
 }
 
 .header__container p {
@@ -167,7 +167,7 @@ nav {
 }
 
 .header__container .input__group span {
-  color: var(text-dark);
+  color: var(--text-dark);
 }
 
 .header__container input {
@@ -178,8 +178,8 @@ nav {
   background-color: transparent;
 }
 
-.header__container button{
-  color: var(text-dark);
+.header__container button {
+  color: var(--text-dark);
   width: 100%;
   padding: 1rem 2rem;
   outline: none;
@@ -187,14 +187,14 @@ nav {
   font-size: 1rem;
   white-space: nowrap;
   color: var(--white);
-  background-color: var(primary-color);
+  background-color: var(--primary-color);
   border-radius: 10px;
   cursor: pointer;
 }
 
-  .header__container button:hover {
-    background-color: #5a9ad1;
-  }
+.header__container button:hover {
+  background-color: #5a9ad1;
+}
 
 @media (width > 540px) {
   .nav__contact {
